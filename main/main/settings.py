@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-h!3ofz04k)l(%0^sio!*wuvhr2uq6e70(g_netv6e5wpa_d2!#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -137,6 +137,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # CORS_ALLOWED_ORIGINS = ["*"]
 CORS_ALLOW_ALL_ORIGINS = True
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+CORS_ALLOW_CREDENTIALS = True
 
 # Gmail...
 EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'

@@ -84,6 +84,7 @@ class UserRegisterVerifyAPIView(APIView):
     def post(self , request):
         srz_data = self.serializer_class(data = request.data)
         email = request.session.get("user_email")
+        print("=========EMAIL========",email)
         otp = OTP.objects.get(email = email)
 
         if srz_data.is_valid():
